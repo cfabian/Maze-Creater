@@ -5,6 +5,7 @@ Creates and solves mazes.
 ##Usage
 
 There are three different executables in this package. <br/>
+Run the makefile to compile.
 
 ###mazemake
 
