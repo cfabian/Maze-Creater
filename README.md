@@ -2,26 +2,26 @@
 
 Creates and solves mazes.
 
-##Usage
+## Usage
 
 There are three different executables in this package. <br/>
 Run the makefile to compile.
 
-###mazemake
+### mazemake
 
 Outputs the size of the maze and the two blocks that do not have a wall between them in the maze. It is best to redirect this to a text file so it can be used with the other parts.
 ```
 ./mazemake rows columns > maze.txt
 ```
 
-###mazesolve
+### mazesolve
 
 Outputs the size of the maze and the block number that is necessary to go through in order to solve the maze. It takes the file from mazemake through stdin as a parameter. Once agian it is best to redirect this to a text file so it can be used with the other parts.
 ```
 ./mazesolve < maze.txt > solved_maze.txt
 ```
 
-###mazeshow
+### mazeshow
 
 Outputs a PPM image of the maze. It takes the choosen width of the blocks in the maze, the file created by mazemake and the file created by mazesolve (optional) as parameters. The PPM file contents will be sent to stdout so it is best to redirect to a PPM file. <br/>
 ``` 
